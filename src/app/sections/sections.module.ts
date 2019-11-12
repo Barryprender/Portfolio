@@ -8,9 +8,13 @@ import { CareerHistoryComponent } from './career-history/career-history.componen
 import { EducationComponent } from './education/education.component';
 import { InterestsComponent } from './interests/interests.component';
 
+
+import { MatSliderModule } from '@angular/material/slider';
+
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    MatSliderModule
   ],
   declarations: [
     HeaderComponent,
@@ -19,7 +23,7 @@ import { InterestsComponent } from './interests/interests.component';
     SkillsComponent,
     CareerHistoryComponent,
     EducationComponent,
-    InterestsComponent
+    InterestsComponent,
   ],
 
 })

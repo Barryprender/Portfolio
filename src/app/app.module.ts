@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SectionsComponent } from './sections/sections.component';
 import { SectionsModule } from './sections/sections.module';
-import { HeaderComponent } from './sections/header/header.component';
+// import { HeaderComponent } from './sections/header/header.component';
 
 const routes: Routes = [
   {

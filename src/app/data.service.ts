@@ -6,8 +6,8 @@ import { PortfolioData } from './portfolioData';
   providedIn: 'root'
 })
 export class DataService {
-  apiUrl = 'http://barrypre.com/data/data.json';
-  // apiUrl = 'hhttp://my-json-server.typicode.com/Barryprender/test-data-service/db.json';
+  // apiUrl = 'http://barrypre.com/data/data.json';
+  apiUrl = 'https://jsonplaceholder.typicode.com/users';
 
   constructor( private httpRequest: HttpClient ) { }
 

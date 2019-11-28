@@ -12,6 +12,11 @@
   <span>{{ title }} app is running!</span>
     <h1>{{ title }}</h1>
     <h2>{{ name }}</h2>
+  <div *ngFor='let data of portfolioData$'>
+    <h1>{{data.name}}</h1>
+    <h2>{{data.title}}</h2>
+    <img [src]='data.img' alt="image">
+  </div>
       <router-outlet></router-outlet>
   </main>
 

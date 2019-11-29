@@ -1,1 +1,12 @@
-<p>skills component works!</p>
+<section class="skills">
+  <h3 class="">Skills
+      <span class="pull-right">
+          <i class="fa fa-html5"></i>
+          <i class="fa fa-css3"></i>
+          <i class="jquery"></i>
+      </span>
+  </h3>
+  <ul class="inner">
+    <li *ngFor="let skill of skillsData$">{{skill}}</li>
+  </ul>
+</section>

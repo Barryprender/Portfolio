@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../../data.service';
+import { PersonalData } from '../../portfolioData';
 
 @Component({
   selector: 'app-bio',
@@ -7,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BioComponent implements OnInit {
 
-  constructor() { }
-
+  constructor( private dataService: DataService) {}
+  personalData$: PersonalData[];
   ngOnInit() {
+    return this.dataService.getPortfolioPersonalData()
+    .subscribe(pData => this.personalData$ = pData);
   }
 
 }

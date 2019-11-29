@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PortfolioData } from './portfolioData';
+import { PersonalData } from './portfolioData';
 import { DataService } from './data.service';
 
 @Component({
@@ -11,7 +11,7 @@ import { DataService } from './data.service';
 export class AppComponent implements OnInit {
   title = 'portfolio2019';
   name = 'barry prendergast';
-  portfolioData$: PortfolioData[];
+  portfolioData$: PersonalData[];
   constructor( private dataService: DataService) {}
 
   ngOnInit() {

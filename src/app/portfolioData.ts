@@ -7,9 +7,7 @@ export class PersonalData {
   skills: [];
   education: Array<string>;
 }
-export class Skills {
-  skill: string;
-}
+
 export class EmpresaData {
   name: string;
 }

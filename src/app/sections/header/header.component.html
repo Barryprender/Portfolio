@@ -1,25 +1,22 @@
 <header class="container center" *ngFor="let pData of personalData$">
   <div class="row">
     <div class="title col-sm-6">
-        <h1>{{pData.name}}</h1>
-        <h2>{{pData.title}}</h2>
+      <h1>{{pData.name}}</h1>
+      <h2>{{pData.title}}</h2>
     </div>
     <div class="contact-header col-sm-6 clearfix">
-        <ul class="contact-links row">
-            <li class="linkedin col-md-3 col-xs-3">
-                <a href="{{pData.likedin}}" target="_blank">
-                    Linked <i class="fa fa-linkedin-square"></i>
-                </a>
-            </li>
-            <li class="gmail col-md-3 col-xs-3">
-                <a href="mailto:{{pData.email}}" target="_blank">
-                    <i class="fa fa-google"></i> mail
-                </a>
-            </li>
-        </ul>
+      <ul class="contact-links row">
+        <li class="linkedin col-md-3 col-xs-3">
+          <a href="{{pData.likedin}}" target="_blank">
+            Linked <i class="fa fa-linkedin-square"></i>
+          </a>
+        </li>
+        <li class="gmail col-md-3 col-xs-3">
+          <a href="mailto:{{pData.email}}" target="_blank">
+            <i class="fa fa-google"></i> mail
+          </a>
+        </li>
+      </ul>
     </div>
-</div>
+  </div>
 </header>
-
-
-

@@ -20,10 +20,6 @@ export class DataService {
     return this.httpRequest.get<PersonalData[]>(this.apiUrl + '/personalData');
   }
 
-  getSkillsData() {
-    return this.httpRequest.get<PersonalData['skills']>(this.apiUrl + '/personalData');
-  }
-
   getPortfolioEmpresaData() {
     return this.httpRequest.get<EmpresaData[]>(this.apiUrl + '/EmpresaData');
   }

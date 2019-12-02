@@ -1,1 +1,12 @@
-<p>education component works!</p>
+<section *ngFor="let courses of personalData$">
+  <h3>Education</h3>
+  <div class="inner">
+    <ul>
+      <li *ngFor="let course of courses.education">
+        <h4>{{course.title}}</h4>
+        <small>{{course.duration}}</small>
+        <p>{{course.description}}</p>
+      </li>
+    </ul>
+  </div>
+</section>

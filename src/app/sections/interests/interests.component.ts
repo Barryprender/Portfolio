@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../../data.service';
+import { PersonalData } from '../../portfolioData';
 
 @Component({
   selector: 'app-interests',
@@ -7,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InterestsComponent implements OnInit {
 
-  constructor() { }
-
+  constructor( private dataService: DataService) {}
+  personalData$: PersonalData[];
   ngOnInit() {
+    return this.dataService.getPortfolioPersonalData()
+    .subscribe(interests => this.personalData$ = interests);
   }
 
 }

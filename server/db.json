@@ -52,8 +52,6 @@
     }
   ],
   "empresaData": [
-    {
-      "empresas": [
         {
           "name": "Arcmedia",
           "date": "July 2017 - July 2019",
@@ -66,14 +64,14 @@
               "name": "Arcmedia",
               "description": "Code layouts from designer (psd) in HTML 5, CSS 3 and jquery. As the only front end developer I had to handle all the front end issues and modificaciones. The project is built on the Yii php CMV framework as well as bootstrap css framework and managed through GitHub VCS",
               "skills": "html5,css3,jQuery,Magento",
-              "image": "img/arcmedia/arcmediax350.png",
+              "image": "http://barrypre.com/img/arcmedia/arcmediax350.png",
               "link": "www.arcmedia.ch"
             },
             {
               "name": "on-nicotine",
               "description": "Code layouts from designer (psd) in HTML 5, CSS 3 and jquery. As the only front end developer I had to handle all the front end issues and modificaciones. The project is built on the Yii php CMV framework as well as bootstrap css framework and managed through GitHub VCS",
               "skills": "html5,css3,jquery",
-              "image": "img/arcmedia/on-nicotinex350.png",
+              "image": "http://barrypre.com/img/arcmedia/on-nicotinex350.png",
               "link": "www.on-nicotine.com"
             }
           ]
@@ -106,14 +104,14 @@
               "name": "Keepunto",
               "description": "Code layouts from designer (psd) in HTML 5, CSS 3 and jquery. As the only front end developer I had to handle all the front end issues and modificaciones. The project is built on the Yii php CMV framework as well as bootstrap css framework and managed through GitHub VCS",
               "skills": "html5,css3,jquery",
-              "image": "img/keepunto/keepunto1.png",
+              "image": "http://barrypre.com/img/keepunto/keepunto1.png",
               "link": "www.keepunto.com"
             },
             {
               "name": "Scool Zone",
               "description": "Code layouts from designer (psd) in HTML 5, CSS 3 and jquery. As the only front end developer I had to handle all the front end issues and modificaciones. The project is built on the Yii php CMV framework as well as bootstrap css framework and managed through GitHub VCS",
               "skills": "html5,css3,jquery",
-              "image": "img/keepunto/sCool-Zone-Keepunto.png",
+              "image": "http://barrypre.com/img/keepunto/sCool-Zone-Keepunto.png",
               "link": "www.keepunto.com"
             }
           ]
@@ -131,21 +129,21 @@
               "name": "Guapabox",
               "description": "Code layouts from designer (psd) in HTML 5, CSS 3 and jquery. As the only front end developer I had to handle all the front end issues and modificaciones. The project is built on the bootstrap css framework",
               "skills": "html5,css3,jquery",
-              "image": "img/vocento/Guapabox1.png",
+              "image": "http://barrypre.com/img/vocento/Guapabox1.png",
               "link": "www.guapabox.com"
             },
             {
               "name": "Redesign regional news sites",
               "description": "Code layouts from designer (psd) in HTML 5, CSS 3 and jquery. As the only front end developer I had to handle all the front end issues and modificaciones. The project is built on the bootstrap css framework",
               "skills": "html5,css3,jquery",
-              "image": "img/vocento/Redesign1.png",
+              "image": "http://barrypre.com/img/vocento/Redesign1.png",
               "link": "www.elcorreo.com"
             },
             {
               "name": "ABCFoto",
               "description": "Code layouts from designer (psd) in HTML 5, CSS 3 and jquery. As the only front end developer I had to handle all the front end issues and modificaciones. The project is built on the bootstrap css framework",
               "skills": "html5,css3,jquery",
-              "image": "img/vocento/abcfoto1.png",
+              "image": "http://barrypre.com/img/vocento/abcfoto1.png",
               "link": "abcfoto.abc.es"
             }
           ]
@@ -158,7 +156,5 @@
             "HTML, CSS, Wordpress, Oscommerce, phpbb. Web editing and maintenance work in a team of web developers and programmers. Localization Work: Adapting websites en 12 languages  editing html/css, flash  (texts, images, animations) flash banners, image editing."
           ]
         }
-      ]
-    }
   ]
 }

@@ -1,1 +1,34 @@
-<p>career-history component works!</p>
+<section class="experience">
+  <h3>Career History</h3>
+  <div class="inner ng-scope">
+    <div *ngFor="let empData of empresaData$">
+      <h4 class="ng-binding">{{empData.name}}
+        <small>
+          <a href="{{empData.url}}" target="_blank">{{empData.url}}</a>
+        </small>
+      </h4>
+      <p>{{empData.date}}</p>
+      <p *ngFor="let para of empData.description">{{para}}</p>
+      <small class="text-right showBtn">
+        <span>hide examples </span>
+      </small>
+      <div class="examples">
+        <ul class="row">
+          <li *ngFor="let example of empData.examples">
+            <figure>
+              <i class="fa fa-times"></i>
+              <img class="img-responsive" src="{{example.image}}" alt="{{example.name}}">
+              <figcaption>
+                <h5>{{example.name}}</h5>
+                <p>{{example.description}}</p>
+                <small>{{example.skills}}</small>
+                <a href="{{example.url}}" target="_blank" title="{{example.name}}">{{example.url}}</a>
+                <p>more info</p>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

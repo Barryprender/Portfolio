@@ -10,11 +10,14 @@ import { EducationComponent } from './sections/education/education.component';
 import { InterestsComponent } from './sections/interests/interests.component';
 
 
+import {HttpClientModule} from '@angular/common/http';
+
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
-        RouterTestingModule
+        RouterTestingModule,
+        HttpClientModule
       ],
       declarations: [
         AppComponent,
@@ -35,16 +38,4 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'portfolio2019'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('portfolio2019');
-  });
-
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.debugElement.nativeElement;
-    // expect(compiled.querySelector('.content span').textContent).toContain('portfolio2019 app is running!');
-  });
 });

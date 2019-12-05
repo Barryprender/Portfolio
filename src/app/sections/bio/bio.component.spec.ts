@@ -1,5 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { HttpClientModule } from '@angular/common/http';
 import { BioComponent } from './bio.component';
 
 describe('BioComponent', () => {
@@ -8,6 +8,7 @@ describe('BioComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [HttpClientModule],
       declarations: [ BioComponent ]
     })
     .compileComponents();
@@ -19,7 +20,7 @@ describe('BioComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create bio component', () => {
     expect(component).toBeTruthy();
   });
 });

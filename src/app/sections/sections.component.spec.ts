@@ -1,4 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { HttpClientModule } from '@angular/common/http';
 
 import { SectionsComponent } from './sections.component';
 import { HeaderComponent } from './header/header.component';
@@ -8,12 +9,14 @@ import { CareerHistoryComponent } from './career-history/career-history.componen
 import { EducationComponent } from './education/education.component';
 import { InterestsComponent } from './interests/interests.component';
 
+
 describe('SectionsComponent', () => {
   let component: SectionsComponent;
   let fixture: ComponentFixture<SectionsComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [HttpClientModule],
       declarations: [
         SectionsComponent,
         HeaderComponent,

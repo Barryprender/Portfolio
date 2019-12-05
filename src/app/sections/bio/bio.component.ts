@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 import { DataService } from '../../data.service';
 import { PersonalData } from '../../portfolioData';
 
 @Component({
   selector: 'app-bio',
   templateUrl: './bio.component.html',
-  styleUrls: ['./bio.component.scss']
+  styleUrls: ['./bio.component.scss'],
+  providers: [DataService]
 })
 export class BioComponent implements OnInit {
 

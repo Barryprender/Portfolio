@@ -5,7 +5,8 @@ import { PersonalData } from '../../portfolioData';
 @Component({
   selector: 'app-education',
   templateUrl: './education.component.html',
-  styleUrls: ['./education.component.scss']
+  styleUrls: ['./education.component.scss'],
+  providers: [DataService]
 })
 export class EducationComponent implements OnInit {
 

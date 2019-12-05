@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './header.component';
+import { htmlAstToRender3Ast } from '@angular/compiler/src/render3/r3_template_transform';
 
 describe('HeaderComponent', () => {
   let component: HeaderComponent;
@@ -8,6 +9,7 @@ describe('HeaderComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [HttpClientModule],
       declarations: [ HeaderComponent ]
     })
     .compileComponents();

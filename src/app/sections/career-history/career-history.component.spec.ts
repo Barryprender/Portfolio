@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { HttpClientModule } from '@angular/common/http';
 import { CareerHistoryComponent } from './career-history.component';
+import { htmlAstToRender3Ast } from '@angular/compiler/src/render3/r3_template_transform';
 
 describe('CareerHistoryComponent', () => {
   let component: CareerHistoryComponent;
@@ -8,6 +9,7 @@ describe('CareerHistoryComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [HttpClientModule],
       declarations: [ CareerHistoryComponent ]
     })
     .compileComponents();

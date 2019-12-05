@@ -32,7 +32,7 @@ const config: ExtraOptions = {
     AppRoutingModule,
     BrowserAnimationsModule
   ],
-  providers: [DataService],
+  providers: [DataService, HttpClientModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

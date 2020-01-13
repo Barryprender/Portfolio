@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes, ExtraOptions } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,6 +9,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { SectionsComponent } from './sections/sections.component';
 import { SectionsModule } from './sections/sections.module';
 import { DataService } from './data.service';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 const routes: Routes = [
   {
@@ -30,7 +32,9 @@ const config: ExtraOptions = {
     HttpClientModule,
     SectionsModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    FormsModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
   ],
   providers: [DataService, HttpClientModule],
   bootstrap: [AppComponent]

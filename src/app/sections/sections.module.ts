@@ -7,12 +7,18 @@ import { SkillsComponent } from './skills/skills.component';
 import { CareerHistoryComponent } from './career-history/career-history.component';
 import { EducationComponent } from './education/education.component';
 import { InterestsComponent } from './interests/interests.component';
+import { ContactComponent } from './contact/contact.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
+import { NavComponent } from './nav/nav.component';
 
 // Material components
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   declarations: [
     HeaderComponent,
@@ -21,7 +27,9 @@ import { InterestsComponent } from './interests/interests.component';
     SkillsComponent,
     CareerHistoryComponent,
     EducationComponent,
-    InterestsComponent
+    InterestsComponent,
+    ContactComponent,
+    NavComponent,
   ],
 
 })

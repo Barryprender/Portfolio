@@ -1,0 +1,65 @@
+<section class="hero is-primary is-bold">
+  <div class="hero-body">
+    <div class="container">
+
+      <h1 class="title">Contact Us!</h1>
+
+      <h1> {{name}}</h1>
+      <!-- form goes here -->
+      <div [hidden]=submitted>
+        <form #contactForm="ngForm" (ngSubmit)="onSubmit()">
+
+          <!-- name -->
+          <div class="field">
+            <input type="text" name="name" class="input" placeholder="Your Name" [(ngModel)]="name" required
+              minlength="3" #nameInput="ngModel">
+          </div>
+          <div [hidden]="nameInput.valid || nameInput.pristine">
+            Name is required and needs to be at least 3 characters long.
+          </div>
+
+          <!-- email -->
+          <div class="field">
+            <input type="email" name="email" class="input" placeholder="Your Email" [(ngModel)]="email" required email
+              #emailInput="ngModel">
+          </div>
+          <div [hidden]="emailInput.valid || emailInput.pristine">
+            Needs to be a valid email.
+          </div>
+
+          <!-- message -->
+          <div class="field">
+            <textarea class="textarea" name="message" placeholder="What's on your mind?" [(ngModel)]="message" required
+              #messageInput="ngModel"></textarea>
+          </div>
+          <div [hidden]="messageInput.valid || messageInput.pristine">
+            Your message is required!
+          </div>
+
+          <button type="submit" class="button is-danger is-large" [disabled]="!contactForm.form.valid"
+            (click)="newContact()">Submit</button>
+
+        </form>
+      </div>
+
+      <div [hidden]="!submitted">
+        <h2>You submitted the following:</h2>
+        <div class="row">
+          <div class="col-xs-3">Name: </div>
+          <div class="col-xs-9">{{ name }}</div>
+        </div>
+        <div class="row">
+          <div class="col-xs-3">Email: </div>
+          <div class="col-xs-9">{{ email }}</div>
+        </div>
+        <div class="row">
+          <div class="col-xs-3">Message: </div>
+          <div class="col-xs-9">{{ message }}</div>
+        </div>
+        <br>
+        <button class="btn btn-primary" (click)="submitted=false; contactForm.reset()">Edit</button>
+      </div>
+
+    </div>
+  </div>
+</section>

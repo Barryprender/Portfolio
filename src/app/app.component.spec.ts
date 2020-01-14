@@ -3,6 +3,7 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 import { SectionsComponent } from './sections/sections.component';
 import { HeaderComponent } from './sections/header/header.component';
+import { NavComponent} from './sections/nav/nav.component';
 import { SkillsComponent } from './sections/skills/skills.component';
 import { BioComponent } from './sections/bio/bio.component';
 import { CareerHistoryComponent } from './sections/career-history/career-history.component';
@@ -22,6 +23,7 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent,
         SectionsComponent,
+        NavComponent,
         HeaderComponent,
         SkillsComponent,
         BioComponent,

@@ -16,11 +16,11 @@ export class ContactComponent implements OnInit {
 
   model = new ContactDataModel('', '', '');
 
+  submitted = false;
+
   newContact() {
     this.model = new ContactDataModel('', '', '');
   }
-
-  submitted = false;
 
   onSubmit() { this.submitted = true; }
 

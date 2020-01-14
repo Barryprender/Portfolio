@@ -8,6 +8,7 @@ import { BioComponent } from './bio/bio.component';
 import { CareerHistoryComponent } from './career-history/career-history.component';
 import { EducationComponent } from './education/education.component';
 import { InterestsComponent } from './interests/interests.component';
+import { NavComponent } from './nav/nav.component';
 
 
 describe('SectionsComponent', () => {
@@ -19,6 +20,7 @@ describe('SectionsComponent', () => {
       imports: [HttpClientModule],
       declarations: [
         SectionsComponent,
+        NavComponent,
         HeaderComponent,
         SkillsComponent,
         BioComponent,

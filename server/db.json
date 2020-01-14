@@ -16,10 +16,11 @@
         {"skill":"MySQL"},
         {"skill":"JQuery"},
         {"skill":"NODE.js (Gulp/Grunt)"},
-        {"skill":"ANGULAR.js"},
+        {"skill":"ANGULAR"},
+        {"skill":"DRUPAL / MAGENTO"},
         {"skill":"Cross Browser Compatibility"},
         {"skill":"Responsive Web Design"},
-        {"skill":"GIT"},
+        {"skill":"GIT / GIT FLOW"},
         {"skill":"JIRA"},
         {"skill":"SLACK"},
         {"skill":"AGILE"}

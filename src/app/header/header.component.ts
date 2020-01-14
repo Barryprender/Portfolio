@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from '../../data.service';
-import { PersonalData } from '../../portfolioData';
+import { DataService } from '../data.service';
+import { PersonalData } from '../portfolioData';
 
 @Component ({
   selector: 'app-header',

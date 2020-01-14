@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
+import { NavComponent } from './nav/nav.component';
 import { SectionsComponent } from './sections.component';
 import { BioComponent } from './bio/bio.component';
 import { SkillsComponent } from './skills/skills.component';
@@ -10,9 +11,8 @@ import { InterestsComponent } from './interests/interests.component';
 import { ContactComponent } from './contact/contact.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
-import { NavComponent } from './nav/nav.component';
 
-// Material components
+
 
 @NgModule({
   imports: [
@@ -22,6 +22,7 @@ import { NavComponent } from './nav/nav.component';
   ],
   declarations: [
     HeaderComponent,
+    NavComponent,
     SectionsComponent,
     BioComponent,
     SkillsComponent,
@@ -29,7 +30,6 @@ import { NavComponent } from './nav/nav.component';
     EducationComponent,
     InterestsComponent,
     ContactComponent,
-    NavComponent,
   ],
 
 })

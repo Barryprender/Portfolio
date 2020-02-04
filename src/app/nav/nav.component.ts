@@ -7,6 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
 
+  navList: Array<{navItem: string, routeLink: string}> = [
+    { navItem: 'Bio', routeLink: '' },
+    { navItem: 'Skills', routeLink: 'Skills' },
+    { navItem: 'Education', routeLink: 'Education' },
+    { navItem: 'Experience', routeLink: 'Experience' },
+    { navItem: 'Interests', routeLink: 'Interests' },
+    { navItem: 'Contact', routeLink: 'Contact' }
+  ];
+
+
+
+  status = false;
+  onClickMe() {
+    this.status = !this.status;
+  }
+
+
+
   constructor() { }
 
   ngOnInit() {

@@ -15,23 +15,23 @@ const routes: Routes = [
     component: BioComponent
   },
   {
-    path: 'skills',
+    path: 'Skills',
     component: SkillsComponent
   },
   {
-    path: 'experience',
+    path: 'Experience',
     component: CareerHistoryComponent
   },
   {
-    path: 'education',
+    path: 'Education',
     component: EducationComponent
   },
   {
-    path: 'interests',
+    path: 'Interests',
     component: InterestsComponent
   },
   {
-    path: 'contact',
+    path: 'Contact',
     component: ContactComponent
   }
 ];

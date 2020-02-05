@@ -12,6 +12,10 @@ const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
+    redirectTo: 'Home',
+  },
+  {
+    path: 'Home',
     component: BioComponent
   },
   {

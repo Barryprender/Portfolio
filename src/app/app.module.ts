@@ -11,11 +11,8 @@ import { DataService } from './data.service';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { SectionsModule } from './sections/sections.module';
-import { NavComponent} from './nav/nav.component';
+import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
-
-
-// import { FooterComponent } from './footer/footer.component';
 
 
 const routes: Routes = [
@@ -24,6 +21,7 @@ const routes: Routes = [
     component: SectionsComponent
   }
 ];
+
 const config: ExtraOptions = {
   useHash: true,
 };
@@ -44,6 +42,9 @@ const config: ExtraOptions = {
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
+  ],
+  exports: [
+    RouterModule
   ],
   providers: [DataService, HttpClientModule],
   bootstrap: [AppComponent]

@@ -7,22 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
 
-  navList: Array<{navItem: string, routeLink: string}> = [
-    { navItem: 'Bio', routeLink: '' },
-    { navItem: 'Skills', routeLink: 'Skills' },
-    { navItem: 'Education', routeLink: 'Education' },
-    { navItem: 'Experience', routeLink: 'Experience' },
-    { navItem: 'Interests', routeLink: 'Interests' },
-    { navItem: 'Contact', routeLink: 'Contact' }
+  navList: Array<{ navItemName: string, routeLink: string }> = [
+    { navItemName: 'Bio', routeLink: 'Home' },
+    { navItemName: 'Skills', routeLink: 'Skills' },
+    { navItemName: 'Education', routeLink: 'Education' },
+    { navItemName: 'Experience', routeLink: 'Experience' },
+    { navItemName: 'Interests', routeLink: 'Interests' },
+    { navItemName: 'Contact', routeLink: 'Contact' }
   ];
 
 
 
-  status = false;
-  onClickMe() {
-    this.status = !this.status;
-  }
-
+  // status = false;
+  // onClickMe() {
+  //   this.status = !this.status;
+  // }
 
 
   constructor() { }

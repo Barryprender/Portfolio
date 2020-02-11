@@ -13,6 +13,7 @@ import { HeaderComponent } from './header/header.component';
 import { SectionsModule } from './sections/sections.module';
 import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 
 const routes: Routes = [
@@ -42,6 +43,7 @@ const config: ExtraOptions = {
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
+    MDBBootstrapModule.forRoot()
   ],
   exports: [
     RouterModule

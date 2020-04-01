@@ -1,0 +1,22 @@
+<section class="container" *ngFor="let pData of personalData$">
+  <h3 class="title">Skills
+    <span class="pull-right">
+      <!-- <i class="fa fa-html5"></i>
+      <i class="fa fa-css3"></i>
+      <i class="jquery"></i> -->
+    </span>
+  </h3>
+  <ul class="d-flex flex-wrap align-content-start row ml-0">
+    <li *ngFor="let skills of pData.skills" class="skills-list-item mb-3 col-4 wow fadeInUp">
+      <div class="card">
+        <div class="card-body">
+          <mdb-icon fab icon='{{ skills.icon }}'></mdb-icon>
+          <h5 class="card-title">{{ skills.skill }}</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </li>
+  </ul>
+</section>

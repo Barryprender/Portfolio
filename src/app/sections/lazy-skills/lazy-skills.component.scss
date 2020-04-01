@@ -1,0 +1,23 @@
+
+.skills-list-item {
+  &:active div {
+    background: coral;
+    transition: all linear 200ms;
+  }
+  & > div {
+    transition: all linear 200ms;
+    &:hover {
+      background: lightblue;
+      transition: all linear 200ms;
+    }
+  }
+  .skills-list-item:nth-child(3n + 1) {
+   padding-left: 0 !important;
+  }
+  .fab {
+    display: block;
+    font-size: 2em;
+    text-align: center;
+
+  }
+}

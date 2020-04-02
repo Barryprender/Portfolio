@@ -43,7 +43,7 @@ const config: ExtraOptions = {
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    MDBBootstrapModule.forRoot()
+    MDBBootstrapModule.forRoot(),
   ],
   exports: [
     RouterModule

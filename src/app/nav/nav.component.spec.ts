@@ -2,6 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { NavComponent } from './nav.component';
 import { RouterTestingModule } from '@angular/router/testing';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { BioComponent } from '../sections/bio/bio.component';
 import { SkillsComponent } from '../sections/skills/skills.component';
 import { EducationComponent } from '../sections/education/education.component';
@@ -16,6 +17,7 @@ describe('NavComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
+        MDBBootstrapModule.forRoot(),
         RouterTestingModule.withRoutes(
           [
             { path: '', component: BioComponent },

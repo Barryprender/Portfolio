@@ -23,6 +23,10 @@ const routes: Routes = [
     component: SkillsComponent
   },
   {
+    path: 'lazy-skills',
+    loadChildren: () => import('src/app/sections/lazy-skills/lazy-skills.module').then (m => m.LazySkillsModule)
+  },
+  {
     path: 'Experience',
     component: CareerHistoryComponent
   },
@@ -37,7 +41,8 @@ const routes: Routes = [
   {
     path: 'Contact',
     component: ContactComponent
-  }
+  },
+  { path: 'l-skills', loadChildren: () => import('./sections/lazy-skills/lazy-skills.module').then(m => m.LazySkillsModule) }
 ];
 
 @NgModule({

@@ -1,32 +1,32 @@
 <section class="container">
   <h3 class="title">Career History</h3>
-    <div *ngFor="let empData of empresaData$" class="card container">
-      <h4 class="ng-binding">{{empData.name}}
-        <small>
-          <a href="{{empData.url}}" target="_blank">{{empData.url}}</a>
-        </small>
-      </h4>
-      <p>{{empData.date}}</p>
-      <p *ngFor="let para of empData.description">{{para}}</p>
-      <small class="text-right showBtn">
-        <span>hide examples </span>
+  <div *ngFor="let empData of empresaData$" class="card container wow fadeInUp">
+    <h4 class="ng-binding">{{empData.name}}
+      <small>
+        <a href="{{empData.url}}" target="_blank">{{empData.url}}</a>
       </small>
-      <div class="examples">
-        <ul class="row">
-          <li *ngFor="let example of empData.examples" class="col">
-            <figure>
-              <i class="fa fa-times"></i>
-              <img class="img-responsive" src="{{example.image}}" alt="{{example.name}}">
-              <figcaption>
-                <h5>{{example.name}}</h5>
-                <p>{{example.description}}</p>
-                <small>{{example.skills}}</small>
-                <a href="{{example.url}}" target="_blank" title="{{example.name}}">{{example.url}}</a>
-                <p>more info</p>
-              </figcaption>
-            </figure>
-          </li>
-        </ul>
-      </div>
+    </h4>
+    <p>{{empData.date}}</p>
+    <p *ngFor="let para of empData.description">{{para}}</p>
+    <small class="text-right showBtn">
+      <span>hide examples </span>
+    </small>
+    <div class="examples">
+      <ul class="row">
+        <li *ngFor="let example of empData.examples" class="col">
+          <figure>
+            <i class="fa fa-times"></i>
+            <img class="img-responsive" src="{{example.image}}" alt="{{example.name}}">
+            <figcaption>
+              <h5>{{example.name}}</h5>
+              <p>{{example.description}}</p>
+              <small>{{example.skills}}</small>
+              <a href="{{example.url}}" target="_blank" title="{{example.name}}">{{example.url}}</a>
+              <p>more info</p>
+            </figcaption>
+          </figure>
+        </li>
+      </ul>
     </div>
+  </div>
 </section>

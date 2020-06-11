@@ -1,22 +1,23 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { HttpClientModule } from '@angular/common/http';
-import { SkillsComponent } from './skills.component';
-import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { MDBBootstrapModule, IconsModule } from 'angular-bootstrap-md';
 
-describe('SkillsComponent', () => {
-  let component: SkillsComponent;
-  let fixture: ComponentFixture<SkillsComponent>;
+import { LazySkillsComponent } from './lazy-skills.component';
+
+describe('LazySkillsComponent', () => {
+  let component: LazySkillsComponent;
+  let fixture: ComponentFixture<LazySkillsComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [HttpClientModule, MDBBootstrapModule.forRoot()],
-      declarations: [ SkillsComponent ]
+      declarations: [ LazySkillsComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SkillsComponent);
+    fixture = TestBed.createComponent(LazySkillsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

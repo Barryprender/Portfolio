@@ -1,7 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HeaderComponent } from './header/header.component';
-import { NavComponent } from './nav/nav.component';
 import { SectionsComponent } from './sections.component';
 import { BioComponent } from './bio/bio.component';
 import { SkillsComponent } from './skills/skills.component';
@@ -11,6 +9,7 @@ import { InterestsComponent } from './interests/interests.component';
 import { ContactComponent } from './contact/contact.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 
 
@@ -18,11 +17,10 @@ import { FormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    MDBBootstrapModule
   ],
   declarations: [
-    HeaderComponent,
-    NavComponent,
     SectionsComponent,
     BioComponent,
     SkillsComponent,

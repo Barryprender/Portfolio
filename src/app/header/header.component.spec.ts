@@ -1,26 +1,26 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { HttpClientModule } from '@angular/common/http';
-import { BioComponent } from './bio.component';
+import { HeaderComponent } from './header.component';
 
-describe('BioComponent', () => {
-  let component: BioComponent;
-  let fixture: ComponentFixture<BioComponent>;
+describe('HeaderComponent', () => {
+  let component: HeaderComponent;
+  let fixture: ComponentFixture<HeaderComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [ HttpClientModule ],
-      declarations: [ BioComponent ]
+      declarations: [ HeaderComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BioComponent);
+    fixture = TestBed.createComponent(HeaderComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
 
-  it('should create bio component', () => {
+  it('should create', () => {
     expect(component).toBeTruthy();
   });
 });

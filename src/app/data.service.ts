@@ -7,7 +7,7 @@ import { PersonalData, EmpresaData } from './portfolioData';
   providedIn: 'root'
 })
 export class DataService {
-  // apiUrl = 'http://barrypre.com/data/data.json';
+  // apiUrl = 'https://barrypre.com/data/data.json';
   apiUrl = 'http://localhost:3000';
 
   constructor( private httpRequest: HttpClient ) { }

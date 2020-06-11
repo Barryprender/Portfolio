@@ -3,15 +3,15 @@ import { DataService } from '../../data.service';
 import { PersonalData } from '../../portfolioData';
 
 @Component({
-  selector: 'app-bio',
-  templateUrl: './bio.component.html',
-  styleUrls: ['./bio.component.scss'],
-  providers: [DataService]
+  selector: 'app-lazy-skills',
+  templateUrl: './lazy-skills.component.html',
+  styleUrls: ['./lazy-skills.component.scss']
 })
-export class BioComponent implements OnInit {
+export class LazySkillsComponent implements OnInit {
 
   constructor( private dataService: DataService) {}
   personalData$: PersonalData[];
+
   ngOnInit() {
     return this.dataService.getPortfolioPersonalData()
     .subscribe(pData => this.personalData$ = pData);

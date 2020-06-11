@@ -1,7 +1,13 @@
 <section class="container" *ngFor="let pData of personalData$">
-  <h3 class="title">Skills</h3>
-  <ul class="d-flex flex-wrap align-content-start ml-0">
-    <li *ngFor="let skills of pData.skills" class="skills-list-item mb-3 col-md-4 wow fadeInUp">
+  <h3 class="title">Skills
+    <span class="pull-right">
+      <!-- <i class="fa fa-html5"></i>
+      <i class="fa fa-css3"></i>
+      <i class="jquery"></i> -->
+    </span>
+  </h3>
+  <ul class="d-flex flex-wrap align-content-start row ml-0">
+    <li *ngFor="let skills of pData.skills" class="skills-list-item mb-3 col-4 wow fadeInUp">
       <div class="card">
         <div class="card-body">
           <mdb-icon fab icon='{{ skills.icon }}'></mdb-icon>
